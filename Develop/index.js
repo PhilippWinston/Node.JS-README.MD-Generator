@@ -32,7 +32,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "Email",
+    name: "email",
     message: "What is your Email? (Required)",
     validate: (emailinput) => {
       if (emailinput) {
@@ -87,7 +87,7 @@ const questions = [
     type: "input",
     name: "credit",
     message:
-      "Please provide any credits needed for collaborators, tutorials, starter code used. (Required)",
+      "Please provide any credits needed for tutorials or starter code used. (Required)",
     validate: (creditInput) => {
       if (creditInput) {
         return true;
@@ -100,25 +100,19 @@ const questions = [
   {
     type: "confirm",
     name: "confirmContributers",
-    message: "Would you like to allow other developers to Contribute?",
+    message: "Would you like to allow other developers to contribute?",
     default: true,
   },
   {
     type: "input",
     name: "contribute",
-    message: "Please provide guidelines for Contributing. (Required)",
-    when: ({ confirmContributers }) => {
-      if (confirmContributers) {
-        return true;
-      } else {
-        return false;
-      }
-    },
+    message: "Please provide guidelines for contributing. (Required)",
+    when: (answers) => answers.confirmContributers,
     validate: (contributerInput) => {
       if (contributerInput) {
         return true;
       } else {
-        console.log("Please enter Contributer guidelines!");
+        console.log("Please enter contributing guidelines!");
         return false;
       }
     },
@@ -140,25 +134,9 @@ const questions = [
     type: "list",
     name: "license",
     message: "Which license will you use for your project?",
-    choices: ["agpl", "apache", "mit", "other", "no license"],
+    choices: ["agpl", "apache", "mit", "no license"],
     when: (answers) => {
-      return answers.license !== "no license" && answers.license !== "other";
-    },
-  },
-  {
-    type: "input",
-    name: "otherLicense",
-    message: "Please enter the License you would like to use. (Required):",
-    when: (answers) => {
-      return answers.license === "other";
-    },
-    validate: (otherLicenseInput) => {
-      if (otherLicenseInput) {
-        return true;
-      } else {
-        console.log("Please enter the License you'd like to use!");
-        return false;
-      }
+      return answers.license !== "no license";
     },
   },
 ];
