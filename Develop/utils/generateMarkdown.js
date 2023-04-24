@@ -43,7 +43,8 @@ ${licenseBadge} is being used in this project, find out more about it here ${lic
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-
+  
+  ${renderLicenseSection(data.license)}
 
   ## [Description](#table-of-contents)
   
@@ -92,7 +93,7 @@ function generateMarkdown(data) {
   }
   
 
-  ${renderLicenseSection(data.license)}
+
   
 
   ## [Tests](#table-of-contents)
