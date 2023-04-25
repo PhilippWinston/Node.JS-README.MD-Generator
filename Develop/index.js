@@ -44,7 +44,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "Installation",
+    name: "installation",
     message:
       "Are there any Installation instructions for your project? (Required)",
     validate: (InstallationInput) => {
@@ -149,7 +149,7 @@ function writeToFile(fileName, data) {
 }
 inquirer.prompt(questions).then((answers) => {
   const readmePageContent = generateMarkdown(answers);
-  writeToFile("README.md", readmePageContent);
+  writeToFile("Generated-README.md", readmePageContent);
 });
 
 // TODO: Create a function to initialize app

@@ -1,9 +1,15 @@
-# fsffs
+# Quality README Generator
+  
+  
+## [License](#license)
+
+![License](https://img.shields.io/badge/License-agpl-green) is being used in this project, find out more about it here [License Info](https://opensource.org/licenses/agpl)
 
 
   ## [Description](#table-of-contents)
   
-  fs
+  This program is a quality README generator, it will assist you in filling out a README.MD for your professional or personal projects. With prompts to help you fill out the read me upon completion it will generate a filled out markdown template for you. It will walk you through each important area of a README and generate a license badge for your professional or personal projects.
+
   
   
   ## Table of Contents
@@ -19,11 +25,11 @@
   
   ## [Installation](#table-of-contents)
   
-  undefined
+  N/a
     
   ## [Usage](#table-of-contents)
   
-  fsfs
+  ad
 
   Include screenshots as needed.
   To add a screenshot, create an "assets/images" folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
@@ -32,7 +38,7 @@
   
   ## [credits](#table-of-contents)
   
-  fsfs
+  dd
   
   List your collaborators, if any, with links to their GitHub profiles.
   
@@ -43,22 +49,18 @@
   Thank you for your interest in helping out; however, I will not be accepting contributions from third parties.
   
 
-  
-## [License](#license)
-
-![License](https://img.shields.io/badge/License-apache-green) is being used in this project, find out more about it here [License Info](https://opensource.org/licenses/apache)
 
   
 
   ## [Tests](#table-of-contents)
 
-  sf
+  ddd
 
 
   ## [Questions](#table-of-contents)
 
   Please contact me using the following links:
-  [GitHub](https://github.com/fsfsfs)
-  [Email: fssf](mailto:fssf)
+  [GitHub](https://github.com/Philippwinston)
+  [Email: Philippwonf](mailto:Philippwonf)
   
 ---
